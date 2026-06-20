@@ -5,6 +5,14 @@ terraform {
       version = "~> 4.0"
     }
   }
+
+
+  backend "azurerm" {
+    resource_group_name = "rg-terraform-state"
+    storage_account_name = "stntmstfstate"
+    container_name = "asim" #replace with your name
+    key = "asim.terraform.tfstate" #replace with your name
+  }
 }
 
 provider "azurerm" {
