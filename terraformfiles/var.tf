@@ -4,8 +4,8 @@ variable "location" {
 }
 
 variable "environment" {
-  type    = string
-  
+  type = string
+
 }
 
 variable "business_unit" {
